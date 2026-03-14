@@ -29,8 +29,10 @@ export class App {
   
 OrientVarsity: SafeResourceUrl | null = null;
   RequestVarsity: SafeResourceUrl | null = null;
-  firstSub: boolean = false;
-  secondVarsities: boolean = true;
+  nameOrientVarsity: SafeResourceUrl | null = null;
+  nameRequestVarsity: SafeResourceUrl | null = null;
+
+  secondVarsities: boolean = false;
   thirdApply: boolean = true;
 currentBursaryLink: string | null = null;
 currentApply: string | null = null;
@@ -82,9 +84,95 @@ applicationMap: { [key: string]: string } = {
   "Sol Plaatje University": "https://www.spu.ac.za/apply/"
 };
 
+OrientationMap: { [key: string]: string } = {
+  // Western Cape
+  "Cape Peninsula University of Technology": "",
+  "University of Cape Town": "",
+  "University of the Western Cape": "",
+  "Stellenbosch University": "",
 
-// Array of Orientation video IDs
-orientationMap: { [key: string]: string } = {
+  // KwaZulu-Natal
+  "Durban University of Technology": "",
+  "Mangosuthu University of Technology": "",
+  "University of KwaZulu-Natal": "",
+  
+
+  // Eastern Cape
+  "Nelson Mandela University": "",
+  "Rhodes University": "",
+  "University of Fort Hare": "",
+  "Walter Sisulu University": "",
+
+  // Free State
+  "University of Free State": "",
+  "Central University of Technology": "",
+
+  // Gauteng
+  "University of Johannesburg": "",
+  "University of Pretoria": "",
+  "University of Witswatersrand": "",
+  "Tshwane University of Technology": "",
+  "Sefako Makgatho Health Sciences University": "",
+  "Vaal University of Technology": "",
+
+  // North West
+  "North-West University": "",
+
+  // Limpopo
+  "University of Limpopo": "",
+  "University of Venda": "",
+
+  // Mpumalanga
+  "University of Mpumalanga": "",
+
+  // Northern Cape
+  "Sol Plaatje University": ""
+};
+RequirementsMap: { [key: string]: string } = {
+  // Western Cape
+  "Cape Peninsula University of Technology": "",
+  "University of Cape Town": "",
+  "University of the Western Cape": "",
+  "Stellenbosch University": "",
+
+  // KwaZulu-Natal
+  "Durban University of Technology": "",
+  "Mangosuthu University of Technology": "",
+  "University of KwaZulu-Natal": "",
+  
+
+  // Eastern Cape
+  "Nelson Mandela University": "",
+  "Rhodes University": "",
+  "University of Fort Hare": "",
+  "Walter Sisulu University": "",
+
+  // Free State
+  "University of Free State": "",
+  "Central University of Technology": "",
+
+  // Gauteng
+  "University of Johannesburg": "",
+  "University of Pretoria": "",
+  "University of Witswatersrand": "",
+  "Tshwane University of Technology": "",
+  "Sefako Makgatho Health Sciences University": "",
+  "Vaal University of Technology": "",
+
+  // North West
+  "North-West University": "",
+
+  // Limpopo
+  "University of Limpopo": "",
+  "University of Venda": "",
+
+  // Mpumalanga
+  "University of Mpumalanga": "",
+
+  // Northern Cape
+  "Sol Plaatje University": ""
+};
+NameOrientationMap: { [key: string]: string } = {
   // Western Cape
   "Cape Peninsula University of Technology": "TbOZTImzg1Q",
   "University of Cape Town": "EnQi_duKp9k",
@@ -127,6 +215,32 @@ orientationMap: { [key: string]: string } = {
 
   // Northern Cape
   "Sol Plaatje University": "E1iuKP80CiE"
+};
+NameRequirementMap: { [key: string]: string } = {
+  "Cape Peninsula University of Technology": "egwo_87Sg7g",
+  "University of Cape Town": "40x8mPk0ryE",
+  "University of the Western Cape": "YIxpyzgTjS0",
+  "Stellenbosch University": "_Noq3cYe8U4",
+  "Durban University of Technology": "IsZGkEVWNCM",
+  "Mangosuthu University of Technology": "cgU1gnSFiug",
+  "University of KwaZulu-Natal": "Tt4hTC1iDbo",
+  "Nelson Mandela University": "98WwW8p5n8c",
+  "Rhodes University": "_OR0_EJm2ww",
+  "University of Fort Hare": "F7YdiX4b0Vk",
+  "Walter Sisulu University": "3e2tIpUYYPk",
+  "University of Free State": "TyYr2TAlTe0",
+  "Central University of Technology": "PYgBvMI75A0",
+  "University of Johannesburg": "0SPDII2yx3k",
+  "University of Pretoria": "XYKUXlMX_Ss",
+  "University of Witswatersrand": "0SPDII2yx3k",
+  "Tshwane University of Technology": "ZH90fWwilLs",
+  "Sefako Makgatho Health Sciences University": "15Kqypkjck0",
+  "Vaal University of Technology": "bfrAHe8QSZQ",
+  "North-West University": "Le4mQWQQIlw",
+  "University of Limpopo": "umQVF9UqZBY",
+  "University of Venda": "3otgcS-wJl8",
+  "University of Mpumalanga": "AUa07NJiZls",
+  "Sol Plaatje University": "QZo0ybaeCmk"
 };
 
 bursaryMap: { [key: string]: string } = {
@@ -220,64 +334,27 @@ applicationDates: { [key: string]: string } = {
 };
 
 
-//Requirements
-RequirementMap: { [key: string]: string } = {
-  "Cape Peninsula University of Technology": "egwo_87Sg7g",
-  "University of Cape Town": "40x8mPk0ryE",
-  "University of the Western Cape": "YIxpyzgTjS0",
-  "Stellenbosch University": "_Noq3cYe8U4",
-  "Durban University of Technology": "IsZGkEVWNCM",
-  "Mangosuthu University of Technology": "cgU1gnSFiug",
-  "University of KwaZulu-Natal": "Tt4hTC1iDbo",
-  "Nelson Mandela University": "98WwW8p5n8c",
-  "Rhodes University": "_OR0_EJm2ww",
-  "University of Fort Hare": "F7YdiX4b0Vk",
-  "Walter Sisulu University": "3e2tIpUYYPk",
-  "University of Free State": "TyYr2TAlTe0",
-  "Central University of Technology": "PYgBvMI75A0",
-  "University of Johannesburg": "0SPDII2yx3k",
-  "University of Pretoria": "XYKUXlMX_Ss",
-  "University of Witswatersrand": "0SPDII2yx3k",
-  "Tshwane University of Technology": "ZH90fWwilLs",
-  "Sefako Makgatho Health Sciences University": "15Kqypkjck0",
-  "Vaal University of Technology": "bfrAHe8QSZQ",
-  "North-West University": "Le4mQWQQIlw",
-  "University of Limpopo": "umQVF9UqZBY",
-  "University of Venda": "3otgcS-wJl8",
-  "University of Mpumalanga": "AUa07NJiZls",
-  "Sol Plaatje University": "QZo0ybaeCmk"
-};
 
 
 OrientationVid(varsity: string) {
-    this.firstSub = true;
     this.secondVarsities = true;
     this.thirdApply = false;
     this.varsityName = varsity;
     this.updateBursaryLink(varsity);
-    this.RequirementVid(varsity); 
     this.updateApply(varsity);
+    const videoId1 = this.OrientationMap[varsity];
+      this.OrientVarsity = this.vasReqLink + videoId1;
 
-    const videoId = this.orientationMap[varsity];
-    if (videoId) {
-      const fullUrl = this.vasReqLink + videoId;
-      // Sanitize the URL before assigning it
-      this.OrientVarsity = this.sanitizer.bypassSecurityTrustResourceUrl(fullUrl);
-    } else {
-      console.log("No video found for:", varsity);
-    }
-  }
+      this.nameOrientVarsity = this.NameOrientationMap[varsity];
 
-  RequirementVid(varsity: string) {
-    const videoId = this.RequirementMap[varsity];
-    if (videoId) {
-      const fullUrl = this.vasReqLink + videoId;
-      // Sanitize the URL here as well
-      this.RequestVarsity = this.sanitizer.bypassSecurityTrustResourceUrl(fullUrl);
-    } else {
-      console.log("No video found for:", varsity);
-    }
-  }
+
+      const videoId3 = this.RequirementsMap[varsity];
+      this.RequestVarsity = this.vasReqLink + videoId3;
+
+    
+      this.nameRequestVarsity = this.NameRequirementMap[varsity];
+}
+
 
 updateBursaryLink(varsity: string) {
   console.log(this.startDate);
@@ -299,22 +376,6 @@ updateApply(varsity: string) {
   }
 }
 
-Subscribe(email:string){
-    
-  if(email){
-    console.log(email !== "" && email.slice(-9) === "gmail.com");
-  this.firstSub = true;
-  this.secondVarsities = false;
-  this.thirdApply = true;
-    window.open("https://www.youtube.com/@Honorableking99?sub_confirmation=1", "_blank");
-  }
-    else{
-       this.firstSub = false;
-  this.secondVarsities = true;
-  this.thirdApply = true;
-    }
-    
-}
 
 
 
