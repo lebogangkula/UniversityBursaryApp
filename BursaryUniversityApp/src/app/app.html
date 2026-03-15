@@ -6,16 +6,17 @@
 
 <div [hidden]="secondVarsities" 
      style="border: 2px solid #4a90e2; border-radius: 12px; width: 800px; padding: 40px; 
-            background: linear-gradient(145deg, #f3f9ff, #e6f7f1); 
+            background: transparent; 
+              backdrop-filter: blur(10px);          /* adds the blur effect */
             box-shadow: 0 8px 20px rgba(0,0,0,0.15); 
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"> <h2 style="text-decoration: underline;text-align: center; font-size: 50px; color: rgb(31, 0, 207); margin-bottom: 25px;">
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"> <h2 style="text-decoration: underline;text-align: center; font-size: 50px; color: rgb(30, 1, 196); margin-bottom: 25px;">
     South African Universities
   </h2>
-  <h2 style="text-align: center;">New year application dates starts from 31 July – 31 October for 2027</h2>
+  <h2 style="text-align: center; font-weight: 350;">New year application dates starts from 31 July – 31 October for 2027</h2>
   <table style="width: 100%; border-collapse: collapse; text-align: center; font-size: 22px;">
     <thead>
       <tr style="background-color: #007BFF; color: #fff; font-size: 24px;">
-        <th style="padding: 20px; border: 1px solid #ddd;">SA Universities</th>
+        <th style="padding: 20px; border: 1px solid #ddd;font-size: 30px;">SA Universities</th>
       </tr>
     </thead>
     <tbody>
@@ -23,17 +24,7 @@
         <td style="padding: 20px; border: 1px solid #ddd;">
   <button 
     (click)="OrientationVid('Cape Peninsula University of Technology')" 
-    style="
-      font-size: 20px; 
-      padding: 12px 24px; 
-      background-color: #ffffff; 
-      color: #000000; 
-      width: 100%;
-      border: none; 
-      border-radius: 8px; 
-      cursor: pointer; 
-      transition: background-color 0.3s ease;
-    ">
+   >
     Cape Peninsula University of Technology (CPUT)
   </button>
   </td>
@@ -43,16 +34,7 @@
   <td style="padding: 20px; border: 1px solid #ddd;">
    <button 
     (click)="OrientationVid('University of Cape Town')" 
-    style="
-      font-size: 20px; 
-      padding: 12px 24px; 
-      background-color: #ffffff; 
-      color: #000000; 
-      border: none; 
-      border-radius: 8px; 
-      cursor: pointer; 
-      transition: background-color 0.3s ease;
-    ">
+    >
     University of Cape Town
   </button>
   </td>
@@ -64,16 +46,7 @@
   <td style="padding: 20px; border: 1px solid #ddd;">
    <button 
     (click)="OrientationVid('University of the Western Cape')" 
-    style="
-      font-size: 20px; 
-      padding: 12px 24px; 
-      background-color: #ffffff; 
-      color: #000000; 
-      border: none; 
-      border-radius: 8px; 
-      cursor: pointer; 
-      transition: background-color 0.3s ease;
-    ">
+   >
     University of the Western Cape
   </button>
   </td>
@@ -85,16 +58,7 @@
   <td style="padding: 20px; border: 1px solid #ddd;">
    <button 
     (click)="OrientationVid('Stellenbosch University')" 
-    style="
-      font-size: 20px; 
-      padding: 12px 24px; 
-      background-color: #ffffff; 
-      color: #000000; 
-      border: none; 
-      border-radius: 8px; 
-      cursor: pointer; 
-      transition: background-color 0.3s ease;
-    ">
+    >
     Stellenbosch University
   </button>
   </td>
@@ -106,16 +70,7 @@
   <td style="padding: 20px; border: 1px solid #ddd;">
    <button 
     (click)="OrientationVid('Durban University of Technology')" 
-    style="
-      font-size: 20px; 
-      padding: 12px 24px; 
-      background-color: #ffffff; 
-      color: #000000; 
-      border: none; 
-      border-radius: 8px; 
-      cursor: pointer; 
-      transition: background-color 0.3s ease;
-    ">
+    >
     Durban University of Technology
   </button>
   </td>
@@ -127,16 +82,7 @@
   <td style="padding: 20px; border: 1px solid #ddd;">
    <button 
     (click)="OrientationVid('Mangosuthu University of Technology')" 
-    style="
-      font-size: 20px; 
-      padding: 12px 24px; 
-      background-color: #ffffff; 
-      color: #000000; 
-      border: none; 
-      border-radius: 8px; 
-      cursor: pointer; 
-      transition: background-color 0.3s ease;
-    ">
+    >
     Mangosuthu University of Technology
   </button>
   </td>
@@ -148,16 +94,7 @@
   <td style="padding: 20px; border: 1px solid #ddd;">
    <button 
     (click)="OrientationVid('University of KwaZulu-Natal')" 
-    style="
-      font-size: 20px; 
-      padding: 12px 24px; 
-      background-color: #ffffff; 
-      color: #000000; 
-      border: none; 
-      border-radius: 8px; 
-      cursor: pointer; 
-      transition: background-color 0.3s ease;
-    ">
+    >
     University of KwaZulu-Natal
   </button>
   </td>
@@ -171,16 +108,7 @@
   <td style="padding: 20px; border: 1px solid #ddd;">
    <button 
     (click)="OrientationVid('Nelson Mandela University')" 
-    style="
-      font-size: 20px; 
-      padding: 12px 24px; 
-      background-color: #ffffff; 
-      color: #000000; 
-      border: none; 
-      border-radius: 8px; 
-      cursor: pointer; 
-      transition: background-color 0.3s ease;
-    ">
+    >
     Nelson Mandela University
   </button>
   </td>
@@ -192,16 +120,7 @@
   <td style="padding: 20px; border: 1px solid #ddd;">
    <button 
     (click)="OrientationVid('Rhodes University')" 
-    style="
-      font-size: 20px; 
-      padding: 12px 24px; 
-      background-color: #ffffff; 
-      color: #000000; 
-      border: none; 
-      border-radius: 8px; 
-      cursor: pointer; 
-      transition: background-color 0.3s ease;
-    ">
+    >
     Rhodes University
   </button>
   </td>
@@ -215,16 +134,7 @@
   <td style="padding: 20px; border: 1px solid #ddd;">
    <button 
     (click)="OrientationVid('University of Fort Hare')" 
-    style="
-      font-size: 20px; 
-      padding: 12px 24px; 
-      background-color: #ffffff; 
-      color: #000000; 
-      border: none; 
-      border-radius: 8px; 
-      cursor: pointer; 
-      transition: background-color 0.3s ease;
-    ">
+    >
     University of Fort Hare
   </button>
   </td>
@@ -236,16 +146,7 @@
   <td style="padding: 20px; border: 1px solid #ddd;">
    <button 
     (click)="OrientationVid('Walter Sisulu University')" 
-    style="
-      font-size: 20px; 
-      padding: 12px 24px; 
-      background-color: #ffffff; 
-      color: #000000; 
-      border: none; 
-      border-radius: 8px; 
-      cursor: pointer; 
-      transition: background-color 0.3s ease;
-    ">
+    >
     Walter Sisulu University
   </button>
   </td>
@@ -257,16 +158,7 @@
   <td style="padding: 20px; border: 1px solid #ddd;">
    <button 
     (click)="OrientationVid('University of Free State')" 
-    style="
-      font-size: 20px; 
-      padding: 12px 24px; 
-      background-color: #ffffff; 
-      color: #000000; 
-      border: none; 
-      border-radius: 8px; 
-      cursor: pointer; 
-      transition: background-color 0.3s ease;
-    ">
+    >
     University of Free State
   </button>
   </td>
@@ -278,16 +170,7 @@
   <td style="padding: 20px; border: 1px solid #ddd;">
    <button 
     (click)="OrientationVid('Central University of Technology')" 
-    style="
-      font-size: 20px; 
-      padding: 12px 24px; 
-      background-color: #ffffff; 
-      color: #000000; 
-      border: none; 
-      border-radius: 8px; 
-      cursor: pointer; 
-      transition: background-color 0.3s ease;
-    ">
+    >
     Central University of Technology
   </button>
   </td>
@@ -299,16 +182,7 @@
   <td style="padding: 20px; border: 1px solid #ddd;">
    <button 
     (click)="OrientationVid('University of Johannesburg')" 
-    style="
-      font-size: 20px; 
-      padding: 12px 24px; 
-      background-color: #ffffff; 
-      color: #000000; 
-      border: none; 
-      border-radius: 8px; 
-      cursor: pointer; 
-      transition: background-color 0.3s ease;
-    ">
+    >
     University of Johannesburg
   </button>
   </td>
@@ -320,16 +194,7 @@
   <td style="padding: 20px; border: 1px solid #ddd;">
    <button 
     (click)="OrientationVid('University of Pretoria')" 
-    style="
-      font-size: 20px; 
-      padding: 12px 24px; 
-      background-color: #ffffff; 
-      color: #000000; 
-      border: none; 
-      border-radius: 8px; 
-      cursor: pointer; 
-      transition: background-color 0.3s ease;
-    ">
+    >
     University of Pretoria
   </button>
   </td>
@@ -341,16 +206,7 @@
   <td style="padding: 20px; border: 1px solid #ddd;">
    <button 
     (click)="OrientationVid('University of Witswatersrand')" 
-    style="
-      font-size: 20px; 
-      padding: 12px 24px; 
-      background-color: #ffffff; 
-      color: #000000; 
-      border: none; 
-      border-radius: 8px; 
-      cursor: pointer; 
-      transition: background-color 0.3s ease;
-    ">
+    >
     University of Witswatersrand
   </button>
   </td>
@@ -362,16 +218,7 @@
   <td style="padding: 20px; border: 1px solid #ddd;">
    <button 
     (click)="OrientationVid('Tshwane University of Technology')" 
-    style="
-      font-size: 20px; 
-      padding: 12px 24px; 
-      background-color: #ffffff; 
-      color: #000000; 
-      border: none; 
-      border-radius: 8px; 
-      cursor: pointer; 
-      transition: background-color 0.3s ease;
-    ">
+    >
     Tshwane University of Technology
   </button>
   </td>
@@ -383,16 +230,7 @@
   <td style="padding: 20px; border: 1px solid #ddd;">
    <button 
     (click)="OrientationVid('Sefako Makgatho Health Sciences University')" 
-    style="
-      font-size: 20px; 
-      padding: 12px 24px; 
-      background-color: #ffffff; 
-      color: #000000; 
-      border: none; 
-      border-radius: 8px; 
-      cursor: pointer; 
-      transition: background-color 0.3s ease;
-    ">
+    >
     Sefako Makgatho Health Sciences University
   </button>
   </td>
@@ -404,16 +242,7 @@
   <td style="padding: 20px; border: 1px solid #ddd;">
    <button 
     (click)="OrientationVid('Vaal University of Technology')" 
-    style="
-      font-size: 20px; 
-      padding: 12px 24px; 
-      background-color: #ffffff; 
-      color: #000000; 
-      border: none; 
-      border-radius: 8px; 
-      cursor: pointer; 
-      transition: background-color 0.3s ease;
-    ">
+    >
     Vaal University of Technology
   </button>
   </td>
@@ -425,16 +254,7 @@
   <td style="padding: 20px; border: 1px solid #ddd;">
    <button 
     (click)="OrientationVid('North-West University')" 
-    style="
-      font-size: 20px; 
-      padding: 12px 24px; 
-      background-color: #ffffff; 
-      color: #000000; 
-      border: none; 
-      border-radius: 8px; 
-      cursor: pointer; 
-      transition: background-color 0.3s ease;
-    ">
+    >
     North-West University
   </button>
   </td>
@@ -446,16 +266,7 @@
   <td style="padding: 20px; border: 1px solid #ddd;">
    <button 
     (click)="OrientationVid('University of Limpopo')" 
-    style="
-      font-size: 20px; 
-      padding: 12px 24px; 
-      background-color: #ffffff; 
-      color: #000000; 
-      border: none; 
-      border-radius: 8px; 
-      cursor: pointer; 
-      transition: background-color 0.3s ease;
-    ">
+    >
     University of Limpopo
   </button>
   </td>
@@ -467,16 +278,7 @@
   <td style="padding: 20px; border: 1px solid #ddd;">
    <button 
     (click)="OrientationVid('University of Venda')" 
-    style="
-      font-size: 20px; 
-      padding: 12px 24px; 
-      background-color: #ffffff; 
-      color: #000000; 
-      border: none; 
-      border-radius: 8px; 
-      cursor: pointer; 
-      transition: background-color 0.3s ease;
-    ">
+    >
     University of Venda
   </button>
   </td>
@@ -488,16 +290,7 @@
   <td style="padding: 20px; border: 1px solid #ddd;">
    <button 
     (click)="OrientationVid('University of Mpumalanga')" 
-    style="
-      font-size: 20px; 
-      padding: 12px 24px; 
-      background-color: #ffffff; 
-      color: #000000; 
-      border: none; 
-      border-radius: 8px; 
-      cursor: pointer; 
-      transition: background-color 0.3s ease;
-    ">
+    >
     University of Mpumalanga
   </button>
   </td>
@@ -508,16 +301,7 @@
   <td style="padding: 20px; border: 1px solid #ddd;">
    <button 
     (click)="OrientationVid('Sol Plaajte University')" 
-    style="
-      font-size: 20px; 
-      padding: 12px 24px; 
-      background-color: #ffffff; 
-      color: #000000; 
-      border: none; 
-      border-radius: 8px; 
-      cursor: pointer; 
-      transition: background-color 0.3s ease;
-    ">
+    >
     Sol Plaajte University
   </button>
   </td>
@@ -535,73 +319,135 @@
      style="border: 2px solid #007BFF; 
             border-radius: 16px; 
             width: 900px;
-            background: linear-gradient(135deg, #fdfdfd, #f3f9ff); 
+            backdrop-filter: blur(20px); 
+            background: transparent; 
             box-shadow: 0 8px 20px rgba(0,0,0,0.15); 
             text-align: center; 
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             transition: transform 0.3s ease, box-shadow 0.3s ease;">
   
-  <h2 style="font-size: 42px; color: #1baa92; margin-bottom: 25px;text-decoration: underline;">
-    Varsity Connect Suggestion Video links
-  </h2>
+  <header style="background:#004080; color:white; padding:25px; text-align:center; border-radius:8px 8px 0 0;">
+    <h1 style="margin:0; font-size: 36px; font-weight:700; letter-spacing:1px;">South African University Guidance videos</h1>
+    <p style="margin:0; font-size:19px; font-weight:400;"> Guidance to video Applications And registrations</p>
+  </header>
+  <section
+         style="
+           margin:20px; 
+           padding:20px; 
+           background: rgba(255,255,255,0.2); 
+           backdrop-filter: blur(8px);
+           -webkit-backdrop-filter: blur(8px);
+           border-radius:12px; 
+           box-shadow:0 4px 12px rgba(0,0,0,0.2);
+           text-align:center;
+         ">
+  <h2 style="
+  font-size: 42px; 
+  color: #004080; 
+  margin-bottom: 25px; 
+  text-decoration: underline; 
+  text-align: center;
+  font-weight: 700;
+">
+  Varsity Connect Suggestion Video Links
+</h2>
 
-<h3 style="font-size: 40px; color: #007BFF; margin: 20px 0 15px;text-decoration: underline;">Orientation</h3>
+<h3 style="
+  font-size: 40px; 
+  color: #004080; 
+  margin: 20px 0 15px; 
+  text-decoration: underline; 
+  text-align: center;
+  font-weight: 600;
+">
+  Orientation
+</h3>
+
 <div style="text-align: center; margin: 20px;">
-  <!-- Link to Orientation video -->
   <a 
     [href]="OrientVarsity" 
     target="_blank" 
     rel="noopener noreferrer"
-    style="font-size: 22px; color: #007BFF; text-decoration: none;">
+    style="
+      font-size: 22px; 
+      color: #007BFF; 
+      text-decoration: none; 
+      font-weight: 500;
+      transition: all 0.3s ease;
+    "
+    onmouseover="this.style.color='Green'; this.style.textDecoration='underline';"
+    onmouseout="this.style.color='#007BFF'; this.style.textDecoration='none';"
+  >
     {{OrientVarsity}}
   </a>
 </div>
 
-<div style="text-align: center; margin: 20px;">
-  <!-- Link to Orientation creator name -->
-  <a 
-    [href]="nameOrientVarsity" 
-    target="_blank" 
-    rel="noopener noreferrer"
-    style="font-size: 22px; color: #28a745; text-decoration: none;">
-    {{nameOrientVarsity}}
-  </a>
-</div>
 
-<h3 style="font-size: 40px; color: #007BFF; margin: 20px 0 15px;text-decoration: underline;">Requirements</h3>
+
+<h3 style="
+  font-size: 40px; 
+  color: #004080; 
+  margin: 20px 0 15px; 
+  text-decoration: underline; 
+  text-align: center;
+  font-weight: 600;
+">
+  Requirements
+</h3>
+
 <div style="text-align: center; margin: 20px;">
-  <!-- Link to Requirements video -->
   <a 
     [href]="RequestVarsity" 
     target="_blank" 
     rel="noopener noreferrer"
-    style="font-size: 22px; color: #007BFF; text-decoration: none;">
+    style="
+      font-size: 22px; 
+      color: #007BFF; 
+      text-decoration: none; 
+      font-weight: 500;
+      transition: all 0.3s ease;
+    "
+    onmouseover="this.style.color='Green'; this.style.textDecoration='underline';"
+    onmouseout="this.style.color='#007BFF'; this.style.textDecoration='none';"
+  >
     {{RequestVarsity}}
   </a>
 </div>
 
-<div style="text-align: center; margin: 20px;">
-  <!-- Link to Requirements creator name -->
-  <a 
-    [href]="nameRequestVarsity" 
-    target="_blank" 
-    rel="noopener noreferrer"
-    style="font-size: 22px; color: #28a745; text-decoration: none;">
-    {{nameRequestVarsity}}
-  </a>
-</div>
 
-
-
-
-<!-- Dynamic application link display -->
+</section>
 <section *ngIf="currentApply" 
-         style="margin:20px; padding:20px; background:white; border-radius:8px; 
-                box-shadow:0 2px 6px rgba(0,0,0,0.1);">
-  <h3 style="font-size: 22px; color: #007BFF; margin: 20px 0 15px; font-size: 30px;">Apply to {{varsityName}}</h3>
+         style="
+           margin:20px; 
+           padding:20px; 
+           background: rgba(255,255,255,0.2); 
+           backdrop-filter: blur(8px);
+           -webkit-backdrop-filter: blur(8px);
+           border-radius:12px; 
+           box-shadow:0 4px 12px rgba(0,0,0,0.2);
+           text-align:center;
+         ">
+  <h3 style="
+    font-size: 30px; 
+    color: #007BFF; 
+    margin: 20px 0 15px; 
+    font-weight: 600;
+    text-decoration: underline;
+  ">
+    Apply to {{varsityName}}
+  </h3>
   <p>
     <a [href]="currentApply" target="_blank" 
-       style="text-decoration:none; color:#0066cc; font-weight:bold;font-size: 40px;text-decoration: underline;">
+       style="
+         text-decoration:none; 
+         color:#0066cc; 
+         font-weight:bold;
+         font-size: 32px;
+         transition: all 0.3s ease;
+       "
+       onmouseover="this.style.color='Green'; this.style.textDecoration='underline';"
+       onmouseout="this.style.color='#0066cc'; this.style.textDecoration='none';"
+    >
        Apply Online
     </a>
   </p>
@@ -614,59 +460,268 @@
 
   <header style="background:#004080; color:white; padding:25px; text-align:center; border-radius:8px 8px 0 0;">
     <h1 style="margin:0; font-size: 36px; font-weight:700; letter-spacing:1px;">South African Varsity Bursaries</h1>
-    <p style="margin:0; font-size:18px; font-weight:400;">Find bursary opportunities for university applications</p>
+    <p style="margin:0; font-size:19px; font-weight:400;">Find bursary opportunities for university applications</p>
   </header>
 
   <!-- Government Bursaries -->
-  <section style="margin:20px; padding:25px; background:white; border-radius:10px; box-shadow:0 4px 12px rgba(0,0,0,0.1);">
-    <h2 style="color:#004080; font-size:28px; font-weight:600; margin-bottom:15px; text-decoration:underline;">Government Bursaries</h2>
-    <ul style="list-style-type:none; padding:0; font-size:18px;">
-      <li style="margin:10px 0;">
-        <a href="https://www.nsfas.org.za" target="_blank" 
-           style="text-decoration:none; color:#0066cc; font-weight:bold; transition:all 0.3s ease;">
-           NSFAS - National Student Financial Aid Scheme
-        </a>
-      </li>
-      <li style="margin:10px 0;">
-        <a href="https://www.gov.za" target="_blank" 
-           style="text-decoration:none; color:#0066cc; font-weight:bold; transition:all 0.3s ease;">
-           Departmental Bursaries (Health, Agriculture, Tourism, etc.)
-        </a>
-      </li>
-    </ul>
-  </section>
+<section style="
+  margin:20px; 
+  padding:20px; 
+  background: rgba(255,255,255,0.2); 
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius:12px; 
+  box-shadow:0 4px 12px rgba(0,0,0,0.2);
+  text-align:center;
+">
+  <h2 style="
+    color:#004080; 
+    font-size:32px; 
+    font-weight:700; 
+    margin-bottom:20px; 
+    text-decoration:underline; 
+    letter-spacing:1px;
+  ">
+    Government Bursaries
+  </h2>
+
+  <ul style="
+    list-style-type:none; 
+    padding:0; 
+    font-size:20px; 
+    font-weight:500; 
+    line-height:1.6;
+  ">
+    <li style="margin:12px 0;">
+      <a href="https://www.nsfas.org.za" target="_blank" 
+         style="
+           text-decoration:none; 
+           color:#0066cc; 
+           font-weight:600; 
+           transition:all 0.3s ease; 
+           font-size:20px;
+         "
+         onmouseover="this.style.color='Green'; this.style.textDecoration='underline';"
+         onmouseout="this.style.color='#0066cc'; this.style.textDecoration='none';"
+      >
+        NSFAS - National Student Financial Aid Scheme
+      </a>
+    </li>
+
+    <li style="margin:12px 0;">
+      <a href="https://www.gov.za" target="_blank" 
+         style="
+           text-decoration:none; 
+           color:#0066cc; 
+           font-weight:600; 
+           transition:all 0.3s ease; 
+           font-size:20px;
+         "
+         onmouseover="this.style.color='Green'; this.style.textDecoration='underline';"
+         onmouseout="this.style.color='#0066cc'; this.style.textDecoration='none';"
+      >
+        Departmental Bursaries (Health, Agriculture, Tourism, etc.)
+      </a>
+    </li>
+  </ul>
+</section>
+
 
   <!-- Corporate Bursaries -->
-  <section style="margin:20px; padding:25px; background:white; border-radius:10px; box-shadow:0 4px 12px rgba(0,0,0,0.1);">
-    <h2 style="color:#004080; font-size:28px; font-weight:600; margin-bottom:15px; text-decoration:underline;">Corporate & Private Sector Bursaries</h2>
-    <ul style="list-style-type:none; padding:0; font-size:18px;">
-      <li style="margin:10px 0;"><a href="https://www.zabursaries.com" target="_blank" style="text-decoration:none; color:#0066cc; font-weight:bold;">ZA Bursaries - Corporate Listings</a></li>
-      <li style="margin:10px 0;"><a href="https://www.afrisam.com" target="_blank" style="text-decoration:none; color:#0066cc; font-weight:bold;">AfriSam Engineering Bursary</a></li>
-      <li style="margin:10px 0;"><a href="https://www.shopriteholdings.co.za" target="_blank" style="text-decoration:none; color:#0066cc; font-weight:bold;">Shoprite Bursary Programme</a></li>
-    </ul>
-  </section>
+ <section style="
+  margin:20px; 
+  padding:20px; 
+  background: rgba(255,255,255,0.2); 
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius:12px; 
+  box-shadow:0 4px 12px rgba(0,0,0,0.2);
+  text-align:center;
+">
+  <h2 style="
+    color:#004080; 
+    font-size:32px; 
+    font-weight:700; 
+    margin-bottom:20px; 
+    text-decoration:underline; 
+    letter-spacing:1px;
+  ">
+    Corporate & Private Sector Bursaries
+  </h2>
+
+  <ul style="
+    list-style-type:none; 
+    padding:0; 
+    font-size:20px; 
+    font-weight:500; 
+    line-height:1.6;
+  ">
+    <li style="margin:12px 0;">
+      <a href="https://www.zabursaries.com" target="_blank" 
+         style="
+           text-decoration:none; 
+           color:#0066cc; 
+           font-weight:600; 
+           transition:all 0.3s ease; 
+           font-size:20px;
+         "
+         onmouseover="this.style.color='Green'; this.style.textDecoration='underline';"
+         onmouseout="this.style.color='#0066cc'; this.style.textDecoration='none';"
+      >
+        ZA Bursaries - Corporate Listings
+      </a>
+    </li>
+
+    <li style="margin:12px 0;">
+      <a href="https://www.afrisam.com" target="_blank" 
+         style="
+           text-decoration:none; 
+           color:#0066cc; 
+           font-weight:600; 
+           transition:all 0.3s ease; 
+           font-size:20px;
+         "
+         onmouseover="this.style.color='Green'; this.style.textDecoration='underline';"
+         onmouseout="this.style.color='#0066cc'; this.style.textDecoration='none';"
+      >
+        AfriSam Engineering Bursary
+      </a>
+    </li>
+
+    <li style="margin:12px 0;">
+      <a href="https://www.shopriteholdings.co.za" target="_blank" 
+         style="
+           text-decoration:none; 
+           color:#0066cc; 
+           font-weight:600; 
+           transition:all 0.3s ease; 
+           font-size:20px;
+         "
+         onmouseover="this.style.color='Green'; this.style.textDecoration='underline';"
+         onmouseout="this.style.color='#0066cc'; this.style.textDecoration='none';"
+      >
+        Shoprite Bursary Programme
+      </a>
+    </li>
+  </ul>
+</section>
+
 
   <!-- Dynamic bursary link -->
-  <section *ngIf="currentBursaryLink" 
-           style="margin:20px; padding:25px; background:white; border-radius:10px; 
-                  box-shadow:0 4px 12px rgba(0,0,0,0.1); text-align:center;">
-    <h2 style="color:#004080; font-size:28px; font-weight:600; margin-bottom:15px; text-decoration:underline;">Selected Bursary Information</h2>
-    <p style="font-size:18px;">
-      <a [href]="currentBursaryLink" target="_blank" 
-         style="text-decoration:none; color:#0066cc; font-weight:bold; transition:all 0.3s ease;">
-         View Bursary Details of {{varsityName}}
-      </a>
-    </p>
-  </section>
+ <section *ngIf="currentBursaryLink" 
+         style="
+           margin:20px; 
+           padding:20px; 
+           background: rgba(255,255,255,0.2); 
+           backdrop-filter: blur(8px);
+           -webkit-backdrop-filter: blur(8px);
+           border-radius:12px; 
+           box-shadow:0 4px 12px rgba(0,0,0,0.2);
+           text-align:center;
+         ">
+  <h2 style="
+    font-size:32px; 
+    font-weight:700; 
+    margin-bottom:20px; 
+    text-decoration:underline; 
+    letter-spacing:1px;
+    background: linear-gradient(#004080);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  ">
+    Selected Bursary Information
+  </h2>
+
+  <p style="
+    font-size:20px; 
+    font-weight:500; 
+    margin-top:10px;
+  ">
+    <a [href]="currentBursaryLink" target="_blank" 
+       style="
+         text-decoration:none; 
+         color:#0066cc; 
+         font-weight:600; 
+         transition:all 0.3s ease; 
+         font-size:22px;
+       "
+       onmouseover="this.style.color='Green'; this.style.textDecoration='underline';"
+       onmouseout="this.style.color='#0066cc'; this.style.textDecoration='none';"
+    >
+      View Bursary Details of {{varsityName}}
+    </a>
+  </p>
+</section>
+
 
   <!-- Foundations & NGOs -->
-  <section style="margin:20px; padding:25px; background:white; border-radius:10px; box-shadow:0 4px 12px rgba(0,0,0,0.1);">
-    <h2 style="color:#004080; font-size:28px; font-weight:600; margin-bottom:15px; text-decoration:underline;">Foundations & NGOs</h2>
-    <ul style="list-style-type:none; padding:0; font-size:18px;">
-      <li style="margin:10px 0;"><a href="https://www.studytrust.org.za" target="_blank" style="text-decoration:none; color:#0066cc; font-weight:bold;">StudyTrust Bursary Applications</a></li>
-      <li style="margin:10px 0;"><a href="https://fulbright.org.za" target="_blank" style="text-decoration:none; color:#0066cc; font-weight:bold;">Fulbright Foreign Student Program</a></li>
-    </ul>
-  </section>
+ <section style="
+  margin:20px; 
+  padding:20px; 
+  background: rgba(255,255,255,0.2); 
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius:12px; 
+  box-shadow:0 4px 12px rgba(0,0,0,0.2);
+  text-align:center;
+">
+  <h2 style="
+    color:#004080; 
+    font-size:32px; 
+    font-weight:700; 
+    margin-bottom:20px; 
+    text-decoration:underline; 
+    letter-spacing:1px;
+  ">
+    Foundations & NGOs
+  </h2>
+
+  <ul style="
+    list-style-type:none; 
+    padding:0; 
+    font-size:20px; 
+    font-weight:500; 
+    line-height:1.6;
+  ">
+    <li style="margin:12px 0;">
+      <a href="https://www.studytrust.org.za" target="_blank" 
+         style="
+           text-decoration:none; 
+           color:#0066cc; 
+           font-weight:600; 
+           transition:all 0.3s ease; 
+           font-size:20px;
+         "
+         onmouseover="this.style.color='Green'; this.style.textDecoration='underline';"
+         onmouseout="this.style.color='#0066cc'; this.style.textDecoration='none';"
+      >
+        StudyTrust Bursary Applications
+      </a>
+    </li>
+
+    <li style="margin:12px 0;">
+      <a href="https://fulbright.org.za" target="_blank" 
+         style="
+           text-decoration:none; 
+           color:#0066cc; 
+           font-weight:600; 
+           transition:all 0.3s ease; 
+           font-size:20px;
+         "
+         onmouseover="this.style.color='Green'; this.style.textDecoration='underline';"
+         onmouseout="this.style.color='#0066cc'; this.style.textDecoration='none';"
+      >
+        Fulbright Foreign Student Program
+      </a>
+    </li>
+  </ul>
+</section>
+
+
+
+
+
+
 
   <footer style="background:#004080; color:white; text-align:center; padding:15px; margin-top:25px; border-radius:0 0 8px 8px;">
     <p style="margin:0; font-size:16px; font-weight:500;">2026/2027 Varsity Bursary Portal | Built for South African Students</p>
